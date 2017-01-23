@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <title>Application Form</title>
+  <link rel="stylesheet" href="./styles.css"
+</head>
+<body>
+    <h1>Application Form</h1>
+    <div id="instruction">
+      Welcome a prospective candidate!<br> 
+      Thank you for considering us for your employment. To begin fill out 
+      the following form. Don't forget to let us know the position you are 
+      applying for and desired salary. <br>
+      We will contact you soon
+    </div>
+    <form action="/application-success" method="POST">
+      
+      <label>
+        First Name:<input type="text" name="firstname">
+      </label><br>
+
+      <label>
+        Last Name:<input id="last-name" type="text" name="lastname">
+      </label><br>
+
+      <label>
+        Salary requirement: <input type="text" name="salaryrequirement">
+      </label><br>
+
+      <fieldset>
+        <legend>Applying for:</legend><br>
+
+          <label>
+            <input type="radio" name="job" value="software-engineer">Software Engineer
+          </label><br>
+
+          <label>
+            <input type="radio" name="job" value="qa-engineer">QA Engineer
+          </label><br>
+
+          <label>
+            <input type="radio" name="job" value="product-manager">Product Manager
+          </label><br>
+      </fieldset><br>
+
+      <input type="submit">
+    </form>
+</body>
+</html>
